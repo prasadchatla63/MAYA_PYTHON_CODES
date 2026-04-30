@@ -1,0 +1,6 @@
+base = int(input())
+height = int(input())
+
+area = (base * height) // 2  # Using integer division since output is integer
+
+print(area)
