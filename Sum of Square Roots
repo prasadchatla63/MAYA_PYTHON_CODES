@@ -1,0 +1,14 @@
+import math
+
+# Input
+A, B = map(int, input().split())
+
+# Initialize sum
+total = 0
+
+# Loop through numbers from A to B
+for i in range(A, B + 1):
+    total += math.sqrt(i)
+
+# Print result rounded to 2 decimal places
+print(f"{total:.2f}")
