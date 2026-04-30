@@ -1,0 +1,11 @@
+n = int(input())
+
+last = n % 10
+
+first = n
+while first >= 10:
+    first //= 10
+
+result = first + last
+
+print(result)
