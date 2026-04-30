@@ -1,0 +1,27 @@
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+n = int(input())
+
+if is_prime(n):
+    print(0)
+else:
+    # find next prime greater than n
+    greater = n + 1
+    while not is_prime(greater):
+        greater += 1
+
+    # find previous prime less than n
+    smaller = n - 1
+    while smaller > 1 and not is_prime(smaller):
+        smaller -= 1
+
+    diff1 = greater - n
+    diff2 = n - smaller
+
+    print(min(diff1, diff2))
