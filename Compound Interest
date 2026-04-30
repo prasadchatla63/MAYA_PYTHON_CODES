@@ -1,0 +1,11 @@
+# Read inputs
+P = int(input().strip())  # Principal
+R = int(input().strip())  # Rate of Interest
+T = int(input().strip())  # Time Period
+
+# Calculate Compound Interest
+amount = P * ((1 + R/100) ** T)
+CI = amount - P
+
+# Print result rounded to 2 decimal places
+print(f"{CI:.2f}")
