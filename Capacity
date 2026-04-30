@@ -1,0 +1,13 @@
+# Read inputs
+T = int(input().strip())  # Tracks per surface
+S = int(input().strip())  # Sectors per track
+B = int(input().strip())  # Blocks per sector
+
+# Calculate total capacity in bytes
+total_bytes = 2 * T * S * B * 512
+
+# Convert to KB
+capacity_kb = total_bytes // 1024
+
+# Print result
+print(f"{capacity_kb} KB")
