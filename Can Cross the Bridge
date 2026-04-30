@@ -1,0 +1,10 @@
+# Read inputs
+X = int(input().strip())  # Weight of one mango
+Y = int(input().strip())  # Weight of truck
+Z = int(input().strip())  # Maximum allowed weight on bridge
+
+# Calculate maximum mangoes
+max_mangoes = (Z - Y) // X
+
+# Print result
+print(max_mangoes)
