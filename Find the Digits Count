@@ -1,0 +1,9 @@
+# Function to count digits
+def count_digits(n):
+    return len(str(n))
+
+# Input
+n = int(input())
+
+# Output
+print(count_digits(n))
