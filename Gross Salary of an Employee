@@ -1,0 +1,9 @@
+Salary = float(input())
+HRA = float(input())
+DA = float(input())
+
+PF = 0.12 * Salary
+Gross_Salary = Salary + HRA + DA + PF
+
+print(f"{PF:.2f}")
+print(f"{Gross_Salary:.2f}")
