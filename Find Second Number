@@ -1,0 +1,9 @@
+# Read inputs
+X = int(input().strip())  # Average
+Y = int(input().strip())  # First number
+
+# Calculate second number
+Z = (2 * X) - Y
+
+# Print result
+print(Z)
