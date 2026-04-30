@@ -1,0 +1,8 @@
+# Input the number
+x = int(input().strip())
+
+# Check even or odd
+if x % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
