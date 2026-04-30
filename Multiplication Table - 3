@@ -1,0 +1,6 @@
+# Input
+N, A, B = map(int, input().split())
+
+# Loop from A to B (inclusive)
+for i in range(A, B + 1):
+    print(f"{N} x {i} = {N * i}")
