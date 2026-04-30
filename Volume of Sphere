@@ -1,0 +1,11 @@
+# Read radius
+R = int(input().strip())
+
+# Use pi = 3.14 as per expected output
+pi = 3.14
+
+# Calculate volume
+volume = (4/3) * pi * (R ** 3)
+
+# Print result rounded to 2 decimal places
+print(f"{volume:.2f}")
