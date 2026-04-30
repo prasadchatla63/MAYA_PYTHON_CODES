@@ -1,0 +1,13 @@
+# Input total money
+X = int(input().strip())
+# Input daily expenditure
+Y = int(input().strip())
+
+# Calculate total expenditure for 30 days
+total_expenditure = Y * 30
+
+# Check if money is enough
+if X >= total_expenditure:
+    print("YES")
+else:
+    print("NO")
