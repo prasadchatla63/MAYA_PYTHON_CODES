@@ -1,0 +1,43 @@
+# Read input
+n = int(input())
+arr = list(map(int, input().split()))
+target = int(input())
+
+def first_occurrence(arr, target):
+    l, r = 0, len(arr) - 1
+    ans = -1
+    
+    while l <= r:
+        mid = (l + r) // 2
+        
+        if arr[mid] == target:
+            ans = mid
+            r = mid - 1
+        elif arr[mid] < target:
+            l = mid + 1
+        else:
+            r = mid - 1
+    
+    return ans
+
+def last_occurrence(arr, target):
+    l, r = 0, len(arr) - 1
+    ans = -1
+    
+    while l <= r:
+        mid = (l + r) // 2
+        
+        if arr[mid] == target:
+            ans = mid
+            l = mid + 1
+        elif arr[mid] < target:
+            l = mid + 1
+        else:
+            r = mid - 1
+    
+    return ans
+
+first = first_occurrence(arr, target)
+last = last_occurrence(arr, target)
+
+print(first, last)
