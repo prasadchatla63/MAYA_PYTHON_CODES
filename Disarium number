@@ -1,0 +1,12 @@
+n = input()
+
+sum_val = 0
+
+for i in range(len(n)):
+    digit = int(n[i])
+    sum_val += digit ** (i + 1)
+
+if sum_val == int(n):
+    print("True")
+else:
+    print("False")
