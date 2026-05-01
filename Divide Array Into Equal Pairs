@@ -1,0 +1,16 @@
+n = int(input())
+nums = list(map(int, input().split()))
+
+freq = {}
+
+# count frequency
+for num in nums:
+    freq[num] = freq.get(num, 0) + 1
+
+# check if all frequencies are even
+for count in freq.values():
+    if count % 2 != 0:
+        print("false")
+        break
+else:
+    print("true")
