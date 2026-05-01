@@ -1,0 +1,11 @@
+jewels = input().strip()
+stones = input().strip()
+
+jewel_set = set(jewels)
+
+count = 0
+for ch in stones:
+    if ch in jewel_set:
+        count += 1
+
+print(count)
