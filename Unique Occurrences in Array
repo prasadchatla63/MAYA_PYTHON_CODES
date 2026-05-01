@@ -1,0 +1,16 @@
+n = int(input())
+arr = list(map(int, input().split()))
+
+freq = {}
+
+# count frequencies
+for num in arr:
+    freq[num] = freq.get(num, 0) + 1
+
+# check uniqueness of frequencies
+freq_values = list(freq.values())
+
+if len(freq_values) == len(set(freq_values)):
+    print("true")
+else:
+    print("false")
